@@ -1,0 +1,15 @@
+{
+  "name": "meow-generator",
+  "version": "1.0.0",
+  "description": "Creating a English text to Meow-lish for meow captions.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
