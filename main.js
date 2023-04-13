@@ -5,14 +5,14 @@ const MeowConfig = {
 const ConvertEnglishToMeow = (input) => {
   const inputSplit = input.split(" ");
   if (inputSplit.length > 1) {
-    console.log(inputSplit);
     const wordArr = [];
-    inputSplit.forEach(() => {
-      wordArr.push("Meow");
+    inputSplit.forEach((_, index) => {
+      const word = index > 0 ? MeowConfig.general.toLowerCase() : MeowConfig.general;
+      wordArr.push(word);
     });
-    return wordArr.join(" ");
+    return `${wordArr.join(" ")}.`;
   } else {
-    return "Meow";
+    return `${MeowConfig.general}.`;
   }
 };
 
