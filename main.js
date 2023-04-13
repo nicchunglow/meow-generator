@@ -16,9 +16,8 @@ const ConvertEnglishToMeow = (input) => {
     });
     finalSentence = `${wordArr.join(" ")}`;
   }
-  return finalSentence
-    ? finalSentence + MeowConfig.Punctuation.FullStop
-    : MeowConfig.General + MeowConfig.Punctuation.FullStop;
+  finalSentence = finalSentence ? finalSentence : MeowConfig.General;
+  return finalSentence + MeowConfig.Punctuation.FullStop;
 };
 
 module.exports = ConvertEnglishToMeow;
